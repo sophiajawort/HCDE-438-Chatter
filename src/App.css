@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
+/*Name: Sophia Jawort
+  HCDE 438 Assignment 3
+  This file creates the styles for
+  the chatter app. As well as handles
+  the interfaces responsiveness based on the
+  users screen size
+*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* mobile */
+html {
+  font-size: 13px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* tablet */
+@media only screen and (min-width: 480px) {
+  html {
+      font-size: 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* desktop */
+@media only screen and (min-width: 768px) {
+  html {
+      font-size: 17px;
+  }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+  html {
+      font-size: 19px;
+  }
+}
+/*Styles for main app background*/
+.App{
+  background:linear-gradient(to right, rgb(218, 68, 83), rgb(137, 33, 107));;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Styles for the app header*/
+.header{
+  width:100%;
+  height:4rem;
+  border-bottom: 0.25rem solid white;
+  display:flex;
+  align-items:center;
+  background:#89216B;
+  font-size:3rem;
+}
+
+/*Styles for the logo*/
+.logo{
+  height:3rem;
+  width:3rem;
+  background: url("https://i.pinimg.com/564x/92/ac/d1/92acd1ee5aa8ff2537c19e117cde12fe.jpg");
+  background-position:center;
+  background-size: cover;
+  border-radius:70%;
+  border-color: white;
+  border-style:solid;
+  margin:1rem;
+}
+
+/*Styles for the title*/
+.title{
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+/*Styles for the footer*/
+.footer{
+  width: 98%;
+  height: 4rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+/*Styles for the input*/
+.text-input{
+  width: 96%; /*Is going off the screen when I do 100% */
+  background: rgb(218, 68, 83);
+  border: 2px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**Styles for the send button**/
+.send{
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 1.5rem;
+  cursor: pointer;
 }

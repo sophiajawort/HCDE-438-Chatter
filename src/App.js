@@ -6,10 +6,10 @@ function App() {
     <div className="App">
       <header className="header">
         <img className="logo"/>
-        <div> Chatter! </div>
+        <div className="title">Chatter!</div>
       </header>
-      <footer>
-        <input className="text-input" />
+      <footer className="footer">
+        <input className="text-input"/>
         <button className="send">↑</button>
       </footer>
     </div>
