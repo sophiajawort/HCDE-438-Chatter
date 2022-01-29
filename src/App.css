@@ -10,22 +10,14 @@
 html {
   font-size: 13px;
 }
-/* tablet */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 400px) {
   html {
-      font-size: 15px;
+    font-size: 16px;
   }
 }
-/* desktop */
 @media only screen and (min-width: 768px) {
   html {
-      font-size: 17px;
-  }
-}
-/* extra large */
-@media only screen and (min-width: 1024px) {
-  html {
-      font-size: 19px;
+    font-size: 19px;
   }
 }
 /*Styles for main app background*/
@@ -41,7 +33,7 @@ html {
 .header{
   width:100%;
   height:4rem;
-  border-bottom: 0.25rem solid white;
+  border-bottom: 0.15rem solid white;
   display:flex;
   align-items:center;
   background:#89216B;
@@ -50,8 +42,8 @@ html {
 
 /*Styles for the logo*/
 .logo{
-  height:3rem;
-  width:3rem;
+  height:3.5rem;
+  width:3.5rem;
   background: url("https://i.pinimg.com/564x/92/ac/d1/92acd1ee5aa8ff2537c19e117cde12fe.jpg");
   background-position:center;
   background-size: cover;
@@ -68,34 +60,20 @@ html {
   font-size: 3rem;
 }
 
-/*Styles for the footer*/
-.footer{
-  width: 98%;
-  height: 4rem;
+.messages {
   display: flex;
-  align-items: center;
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  max-height: calc(100vh - 4rem - 4rem);
+  min-height: calc(100vh - 4rem - 4rem);
+  padding: 0.13rem;
 }
 
-/*Styles for the input*/
-.text-input{
-  width: 96%; /*Is going off the screen when I do 100% */
-  background: rgb(218, 68, 83);
-  border: 2px solid white;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  color: white;
-}
-
-/**Styles for the send button**/
-.send{
-  background: white;
-  border-radius: 50%;
-  border: none;
-  height: 1.7rem;
-  width: 1.7rem;
-  position: absolute;
-  right: 1.5rem;
-  cursor: pointer;
+.message{
+  background:#89216B;
+  color:white;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
 }
