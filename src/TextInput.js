@@ -1,16 +1,22 @@
+/*Name: Sophia Jawort
+  HCDE 438
+  Script for the input
+  section on the webpage.
+  Allows user to enter a message,
+  and press send.
+*/
 import React from "react";
 import "./TextInput.css";
 import { useState } from "react";
 
+
 function TextInput(props){
-    const { sendMessage } = props;
-    const[text, setText] = useState('')
+    const[text, setText] = useState("")
     function send(){
-        sendMessage(text)
+        props.sendMessage(text)
         setText("")
     }
     function onKeyPress(e){
-        console.log(e)
         if(e.key === "Enter"){
             send()
         }

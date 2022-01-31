@@ -60,6 +60,7 @@ html {
   font-size: 3rem;
 }
 
+/*Determining where the messages will appear on the screen*/
 .messages {
   display: flex;
   flex-direction: column-reverse;
@@ -70,6 +71,7 @@ html {
   padding: 0.13rem;
 }
 
+/**Styles for the messsages*/
 .message{
   background:#89216B;
   color:white;
