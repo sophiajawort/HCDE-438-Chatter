@@ -8,7 +8,8 @@
 import React from "react";
 import "./TextInput.css";
 import { useState } from "react";
-
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { FiCamera } from "react-icons/fi";
 
 function TextInput(props){
     const[text, setText] = useState("")
@@ -23,6 +24,9 @@ function TextInput(props){
     }
     return(
       <footer className="footer">
+        <button className ="camera-btn" onClick={props.showCamera}>
+          <FiCamera class="camera"/>
+        </button>
         <input
         className="text-input"
         value= {text}
@@ -30,7 +34,7 @@ function TextInput(props){
         onKeyPress = {onKeyPress}
         />
         <button className="send" onClick={send}>
-        ↑
+          <BsFillArrowRightCircleFill />
         </button>
       </footer>
     );

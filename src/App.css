@@ -66,8 +66,7 @@ html {
   flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
-  max-height: calc(100vh - 4rem - 4rem);
-  min-height: calc(100vh - 4rem - 4rem);
+  flex:1;
   padding: 0.13rem;
 }
 

@@ -12,12 +12,11 @@
 
   /*Styles for the input*/
   .text-input{
-    width: 100%; /*Is going off the screen when I do 100% */
+    width:calc(100% - 4rem); /*Is going off the screen when I do 100% */
     background: rgb(218, 68, 83);
     border: 0.1rem solid white;
     height: 2rem;
     border-radius: 1rem;
-    margin:0.5rem;
     padding: 0 1rem;
     color: white;
   }
@@ -31,6 +30,15 @@
     height: 1.7rem;
     width: 1.7rem;
     position: absolute;
-    right: 1.1rem;
+    right: 0.5rem;
     cursor: pointer;
+  }
+
+  .camera-btn{
+    background: rgb(211, 96, 107);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    font-style:bold;
+    height: 1.7rem;
+    width: 1.7rem;
   }

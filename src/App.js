@@ -10,15 +10,22 @@ import './App.css';
 import TextInput from "./TextInput"
 import { useState } from "react";
 import Message from "./Message"
+import Camera from 'react-snap-pic'
 
 function App() {
   const [messages, setMessages] = useState([]);
+  const [showCamera, setShowCamera] = useState(false)
   function sendMessage(text){
     const newMessage = {
       text
     };
     setMessages([newMessage, ...messages]);
   }
+    let takePicture  = (img) => {
+      console.log(img)
+      setShowCamera(false)
+    }
+
   return (
     <div className="App">
       <header className="header">
@@ -30,7 +37,9 @@ function App() {
             return <Message {...msg} />;
         })}
       </div>
-      <TextInput sendMessage={sendMessage}/>
+      <TextInput sendMessage= {sendMessage}
+      showCamera= {()=>setShowCamera(true)}/>
+      {showCamera && <Camera takePicture={takePicture}/>}
     </div>
   );
 }
