@@ -14,7 +14,7 @@ import { FiCamera } from "react-icons/fi";
 function TextInput(props){
     const[text, setText] = useState("")
     function send(){
-        props.sendMessage(text)
+        props.sendMessage(text) /*getting the sendMessage function from the props passed in*/
         setText("")
     }
     function onKeyPress(e){
@@ -25,7 +25,7 @@ function TextInput(props){
     return(
       <footer className="footer">
         <button className ="camera-btn" onClick={props.showCamera}>
-          <FiCamera class="camera"/>
+          <FiCamera className="camera"/>
         </button>
         <input
         className="text-input"

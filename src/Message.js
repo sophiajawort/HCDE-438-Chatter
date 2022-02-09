@@ -4,5 +4,7 @@
 */
 
 export default function Message(props) {
-    return <div className="message">{props.text}</div>;
+    return <div className="message">{props.text}
+    <div className="tail"/>
+    </div>;
   }

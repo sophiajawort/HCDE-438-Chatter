@@ -74,7 +74,45 @@ html {
 .message{
   background:#89216B;
   color:white;
-  margin: 0.5rem;
+  margin-left:1.5rem;
+  margin-bottom:1.3rem;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
+  position:relative;
 }
+
+  .message:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-radius:20%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #89216B;
+    border-top: 10px solid #89216B;
+    border-bottom: 10px solid transparent;
+    left: -17px;
+    top: 10px;
+  }
+
+  .name-picker{
+    display:flex;
+    align-items:center;
+    margin-left:1rem;
+  }
+
+  .name-picker svg {
+    stroke: white;
+    cursor: pointer;
+  }
+
+  .name-picker-name {
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .user-button{
+    background-color:#89216B;
+    border: 0.2rem solid white;
+  }

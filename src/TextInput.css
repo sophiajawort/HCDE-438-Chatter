@@ -12,8 +12,9 @@
 
   /*Styles for the input*/
   .text-input{
-    width:calc(100% - 4rem); /*Is going off the screen when I do 100% */
+    width:calc(100% - 3rem); /*Is going off the screen when I do 100% */
     background: rgb(218, 68, 83);
+    margin:1.2rem;
     border: 0.1rem solid white;
     height: 2rem;
     border-radius: 1rem;
@@ -23,22 +24,23 @@
 
   /**Styles for the send button**/
   .send{
-    background: rgb(211, 96, 107);
+    background: rgb(218, 68, 83);
     border-radius: 50%;
     border: 0.1rem solid white;
     font-style:bold;
     height: 1.7rem;
     width: 1.7rem;
     position: absolute;
-    right: 0.5rem;
+    right: 1.6rem;
     cursor: pointer;
   }
 
   .camera-btn{
-    background: rgb(211, 96, 107);
+    margin-left:0.5rem;
+    background: rgb(218, 68, 83);
     border-radius: 50%;
     border: 0.1rem solid white;
     font-style:bold;
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 2.4rem;
+    width: 2.4rem;
   }
