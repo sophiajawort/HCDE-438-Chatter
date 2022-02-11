@@ -4,7 +4,11 @@
 */
 
 export default function Message(props) {
-    return <div className="message">{props.text}
-    <div className="tail"/>
-    </div>;
+    return(
+      <div className="message">
+        <div>{props.text}</div>
+        <div className="message-username">{props.user}</div>
+        <div className="tail"/>npm install -g firebase-tools
+      </div>
+    );
   }

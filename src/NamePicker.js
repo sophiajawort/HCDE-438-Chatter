@@ -14,6 +14,7 @@ export default function NamePicker(props){
 
     function send(){
         props.setUsername(name)
+        console.log(name)
         setShowInput(false)
     }
 
@@ -37,6 +38,8 @@ export default function NamePicker(props){
         </div>
     );
 }
+
+
 /**
  *             className="input-name"
             value= {editName}
