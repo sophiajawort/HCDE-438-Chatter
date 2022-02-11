@@ -78,7 +78,15 @@ html {
   margin-bottom:1.3rem;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
+  overflow-wrap: break-word;
   position:relative;
+}
+
+.message-username{
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 0.5rem;
 }
 
   .message:before {

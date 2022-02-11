@@ -26,6 +26,8 @@ function App() {
       time: Date.now(),
       user: username,
     };
+    console.log(newMessage.user)
+    console.log(newMessage.text)
     db.send(newMessage);
   }
 
@@ -39,11 +41,11 @@ function App() {
       <header className="header">
         <div className="logo" />
         <div className="title">Chatter!</div>
-        <NamePicker setUsername={setUsername} name={username}/>
+        <NamePicker setUsername={setUsername}/>
       </header>
       <div className = "messages">
-        {messages.map((msg) => {
-            return <Message {...msg} />;
+        {messages.map((msg, i) => {
+            return <Message {...msg} key={i} />;
         })}
       </div>
       <TextInput sendMessage= {sendMessage} /*we send over sendMessage function to TextInput */
