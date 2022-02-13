@@ -20,14 +20,14 @@ function App() {
   let [username, setUsername] = useState("");
 
   function sendMessage(text){
+    /* Creating new message item
+     * assigning values text, time, user */
     if (!text.trim()) return;
     const newMessage = {
       text: text,
       time: Date.now(),
       user: username,
     };
-    console.log(newMessage.user)
-    console.log(newMessage.text)
     db.send(newMessage);
   }
 
@@ -41,11 +41,13 @@ function App() {
       <header className="header">
         <div className="logo" />
         <div className="title">Chatter!</div>
+        {/* Custom component to allow user to set their username */}
         <NamePicker setUsername={setUsername}/>
       </header>
       <div className = "messages">
         {messages.map((msg, i) => {
-            return <Message {...msg} key={i} />;
+            /* rendering all the messages in the messages array on the screen */
+            return <Message {...msg} key={i} fromMe={msg.user === username}/>;
         })}
       </div>
       <TextInput sendMessage= {sendMessage} /*we send over sendMessage function to TextInput */

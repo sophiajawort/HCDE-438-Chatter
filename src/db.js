@@ -60,12 +60,12 @@ db.delete = async function (id) {
 export { db, useDB };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCxnHdHGicbw16DmQfEbNVy7XD6ENprVNQ",
-  authDomain: "chatter2021-2b8fb.firebaseapp.com",
-  projectId: "chatter2021-2b8fb",
-  storageBucket: "chatter2021-2b8fb.appspot.com",
-  messagingSenderId: "778098356347",
-  appId: "1:778098356347:web:c396b31d7a0a5c0c6c32de",
+  apiKey: "AIzaSyDIVEhRfJa4JGkPp-iWBfLZ4sUwjaB7NkU",
+  authDomain: "chatter-438.firebaseapp.com",
+  projectId: "chatter-438",
+  storageBucket: "chatter-438.appspot.com",
+  messagingSenderId: "41849957073",
+  appId: "1:41849957073:web:a2daeb0bff7106c960b3f0",
 };
 
 const app = initializeApp(firebaseConfig);
