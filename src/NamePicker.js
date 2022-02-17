@@ -6,15 +6,15 @@ export default function NamePicker(props){
     const [name, setName] = useState("")
     const [showInput, setShowInput] = useState(false)
 
-    /* If they are typing we want to keep updating editName
-    Once the button is clicked want to say sendName and setName */
+    /* Toggle between a set username and editing username when
+    button is pressed */
     function toggle(){
         setShowInput(!showInput)
     }
 
+    /* Setting the username props from app.js */
     function send(){
         props.setUsername(name)
-        console.log(name)
         setShowInput(false)
     }
 

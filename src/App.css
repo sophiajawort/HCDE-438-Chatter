@@ -82,6 +82,13 @@ html {
   position:relative;
 }
 
+.message-row {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
+}
+
 .message-username{
   position: absolute;
   left: 0;
